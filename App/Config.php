@@ -1,16 +1,12 @@
 <?php
-	namespace AbriCoderCore\Core;
+	namespace ACIDECore\App;
 
 	use Noodlehaus\Config as NDConfig;
-	use AbriCoder\ACDefaultConfig;
+	use ACIDE\Config as DefConfig;
 
 	class Config {
 		public static function get($key) {
-			return (new NDConfig(ABSPATH . 'ac-config.json'))->get($key);
-		}
-
-		public static function getDefault($key) {
-			return (new ACDefaultConfig([]))->get($key);
+			return (new DefConfig([]))->get($key);
 		}
 	}
 ?>

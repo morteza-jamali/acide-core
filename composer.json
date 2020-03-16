@@ -2,14 +2,14 @@
     "name": "acide/core",
     "version": "1.0.0",
     "type": "library",
-    "description": "This is Acide project core library",
-    "keywords": ["abricoder"],
-    "homepage": "https://gitlab.com/mrtzaj/abricoder-core",
+    "description": "This is ACIDE project core library",
+    "keywords": ["acide" , "core"],
+    "homepage": "https://github.com/morteza-jamali/acide-core",
     "authors": [
         {
             "name": "Morteza Jamali",
             "email": "mortezajamali4241@gmail.com",
-            "homepage": "https://abricoder.ir",
+            "homepage": "https://abricoder.com",
             "role": "Developer"
         }
     ],
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AbriCoderCore\\": ""
+            "ACIDECore\\": ""
         }
     } ,
     "minimum-stability": "dev",

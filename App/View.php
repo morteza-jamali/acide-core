@@ -1,13 +1,13 @@
 <?php 
-    namespace AbriCoderCore\Core;
+    namespace ACIDECore\App;
 
     class View {
         public static function display($path , $parameters = []) {
-            \Phug::displayFile(Config::getDefault('path.views') . $path . '.pug' , $parameters);
+            \Phug::displayFile(Config::get('path.views') . $path . '.pug' , $parameters);
         }
 
 	    public static function render($path , $parameters = []) {
-		    return \Phug::renderFile(Config::getDefault('path.views') . $path . '.pug' , $parameters);
+		    return \Phug::renderFile(Config::get('path.views') . $path . '.pug' , $parameters);
         }
 
         public static function getScripts($names) {
@@ -15,7 +15,7 @@
 
         	foreach ($names as $name) {
 	            array_push($src , "<script src='" .
-	                              Config::getDefault("scripts.$name") . "'></script>");
+	                              Config::get("scripts.$name") . "'></script>");
 	        }
 
         	return $src;
@@ -26,14 +26,14 @@
 
 		    foreach ($names as $name) {
 			    array_push($href , "<link href='" .
-			                      Config::getDefault("styles.$name") . "' rel='stylesheet' type='text/css'>");
+			                      Config::get("styles.$name") . "' rel='stylesheet' type='text/css'>");
 		    }
 
 		    return $href;
 	    }
 
 	    public static function getImage($name) {
-        	return Config::getDefault('url.img') . $name;
+        	return Config::get('url.img') . $name;
 	    }
     }
 ?>
