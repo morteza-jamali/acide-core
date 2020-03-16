@@ -1,0 +1,26 @@
+{
+    "name": "acide/core",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "This is Acide project core library",
+    "keywords": ["abricoder"],
+    "homepage": "https://gitlab.com/mrtzaj/abricoder-core",
+    "authors": [
+        {
+            "name": "Morteza Jamali",
+            "email": "mortezajamali4241@gmail.com",
+            "homepage": "https://abricoder.ir",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AbriCoderCore\\": ""
+        }
+    } ,
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
