@@ -1,5 +1,5 @@
 <?php
-	namespace AbriCoderCore\Core;
+	namespace ACIDECore\App;
 
 	class StringFactory {
 		public static function getStringBeforeToken($string , $token = "@") {
