@@ -1,5 +1,5 @@
 <?php
-	namespace AbriCoderCore\Core;
+	namespace ACIDECore\App;
 
 	use Illuminate\Database\Capsule\Manager as Capsule;
 	use Illuminate\Events\Dispatcher;

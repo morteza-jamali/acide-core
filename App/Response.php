@@ -1,5 +1,5 @@
 <?php
-	namespace AbriCoderCore\Core;
+	namespace ACIDECore\App;
 
 	class Response {
 		private $response = null;
@@ -8,17 +8,23 @@
 			$this->response = $response;
 		}
 
-		public function success($values) {
+		public function success($values , $code =  200) {
 			return new Response([
-				'type' => 'success' ,
-				'message' => $values
+				'code' => $code ,
+				'body' => [
+					'type' => 'success' ,
+					'message' => $values
+				]
 			]);
 		}
 
-		public function error($values) {
+		public function error($values , $code = 200) {
 			return new Response([
-				'type' => 'error' ,
-				'message' => $values
+				'code' => $code ,
+				'body' => [
+					'type' => 'error' ,
+					'message' => $values
+				]
 			]);
 		}
 
