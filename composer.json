@@ -1,8 +1,8 @@
 {
     "name": "acide/core",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
-    "description": "This is ACIDE project core library",
+    "description": "This is ACID-E project core library",
     "keywords": ["acide" , "core"],
     "homepage": "https://github.com/morteza-jamali/acide-core",
     "authors": [
