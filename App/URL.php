@@ -5,7 +5,12 @@
 
     class URL {
         public static function getAbsolutePath() {
-            return StringFactory::getStringBeforeToken(UrlImmutable::createFromServer($_SERVER) , '?');
+            $URL = UrlImmutable::createFromServer($_SERVER);
+
+            if($_SERVER['HTTP_HOST'] == 'localhost') {
+                return $URL->getBaseUrl() . '/acide/';
+            }
+            return $URL->getBaseUrl() . '/';
         }
     }
 ?>
