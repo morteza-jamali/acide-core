@@ -4,7 +4,7 @@
     use League\Url\UrlImmutable;
 
     class URL {
-        public static function getAbsolutePath() {
+        public static function getBaseURL() {
             $URL = UrlImmutable::createFromServer($_SERVER);
 
             if($_SERVER['HTTP_HOST'] == 'localhost') {

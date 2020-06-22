@@ -1,6 +1,6 @@
 {
     "name": "acide/core",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "library",
     "description": "This is ACID-E project core library",
     "keywords": ["acide" , "core"],
@@ -9,7 +9,7 @@
         {
             "name": "Morteza Jamali",
             "email": "mortezajamali4241@gmail.com",
-            "homepage": "https://abricoder.com",
+            "homepage": "https://morteza-jamali.github.io",
             "role": "Developer"
         }
     ],
