@@ -1,7 +1,8 @@
 {
     "name": "acide/core",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "type": "library",
+    "license" : "CC0-1.0",
     "description": "This is ACID-E project core library",
     "keywords": ["acide" , "core"],
     "homepage": "https://github.com/morteza-jamali/acide-core",
@@ -20,7 +21,5 @@
         "psr-4": {
             "ACIDECore\\": ""
         }
-    } ,
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
